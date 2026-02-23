@@ -1,0 +1,66 @@
+@startuml 
+hide methods 
+hide circle 
+package FML {
+
+class Nøglepartnere {
+Vikarer 
+Folkeskoler
+Politiet
+}
+
+class Nøgleaktiviteter {
+Ansættelse af nye vikarer
+Modtage information om vikarer;
+Dokumentation af nuværende og tidligere vikare 
+Afskivening af vikarer efter deres sammenarbejde ophørere
+Aftjekning af skolens skema
+Sikring af passende mængde vikarer til rådighed 
+Fakturering af folkeskoler
+}
+
+class Nøgleressourcer {
+Vikarer
+Børneattester 
+Rekrutteringsansvarlig
+Bestillingsansvarlig 
+Folkeskoler
+Noteringssystem 
+}
+
+class Værditilbud {
+Afløsning af lærere til folkeskoler 
+Giver adgang til kvalificerede vikarer
+Sørge for folkeskolernes sikkerhed 
+Nemt arbejde for vikarer
+}
+
+class Kunderelationer {
+Buisness to Buisness relationer 
+Personlig kontakt 
+}
+
+class Kanaler {
+Telefon
+Hjemmeside 
+}
+
+class Kundesegmenter {
+Folkeskoler 
+Vikarer 
+Elever
+}
+
+class Omkostningsstruktur {
+Lønomkostninger 
+}
+
+class Indtægtsstrøm {
+Gentagende inkomst 
+Timeløn
+Fast pris 
+}
+}
+
+
+@enduml
