@@ -1,0 +1,44 @@
+@startuml 
+hide methods 
+hide circle 
+package FML {
+
+class Nøglepartnere {
+
+}
+
+class Nøgleaktiviteter {
+
+}
+
+class Nøgleressourcer {
+
+}
+
+class Værditilbud {
+
+}
+
+class Kunderelationer {
+
+}
+
+class Kanaler {
+
+}
+
+class Kundesegmenter {
+
+}
+
+class Omkostningsstruktur {
+
+}
+
+class Indtægtsstrøm {
+
+}
+}
+
+
+@enduml
