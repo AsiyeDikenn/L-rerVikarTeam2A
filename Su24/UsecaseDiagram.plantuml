@@ -1,0 +1,40 @@
+@startuml
+left to right direction
+
+actor "Bestillingsansvarlig" as BA
+actor "Rekrutteringsansvarlig" as RA
+actor "Vikar" as V
+
+rectangle "Vikarsystem" {
+  usecase "Bestil vikar" as UC1
+  usecase "Tilføj vikar" as UC2
+  usecase "Indsæt mulige arbejdstimer" as UC3
+  usecase "Opsæt vagtplan" as UC4
+}
+
+BA --> UC1
+note right of UC1
+At bestille en vikar,
+så folkeskolen kan få en vikar.
+end note
+
+RA --> UC2
+note right of UC2
+At tilføje en vikar,
+så der ikke kommer på mangel på vikarer.
+end note
+
+V --> UC3
+note right of UC3
+At indsætte arbejdstimer for at
+bestillingsansvarlig kan bestille dem,
+når de er ledige.
+end note
+
+BA --> UC4
+note right of UC4
+At opsætte vagtplan,
+for at få overblik.
+end note
+
+@enduml
