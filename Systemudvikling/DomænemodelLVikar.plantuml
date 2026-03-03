@@ -1,0 +1,43 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+hide method
+class Vikar {
+  +navn
+  +telefon
+  +email
+  +status
+  +børneattestUdløb
+}
+
+class Fag {
+  +fagNavn
+}
+
+class Folkeskole {
+  +skoleNavn
+  +adresse
+  +telefon
+  +email
+}
+
+class Bestilling {
+  +dato
+  +startTid
+  +slutTid
+  +antalTimer
+}
+
+class Tilgængelighed {
+  +dato
+  +tid
+}
+
+' Relationer
+Vikar "1" -- "0..*" Tilgængelighed 
+Vikar "1" -- "0..*" Bestilling
+Folkeskole "1" -- "0..*" Bestilling
+Fag "1" -- "0..*" Bestilling
+Vikar "1*" -- "0..*" Fag 
+
+@enduml
